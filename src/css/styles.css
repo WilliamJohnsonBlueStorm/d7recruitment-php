@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#sort {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "\f078";
+    font-size: 1rem;
+    top: 20px;
+    right: 10px;
+    position: absolute;
+    font: var(--fa-font-solid);
+}
