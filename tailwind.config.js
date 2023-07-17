@@ -33,8 +33,9 @@ module.exports = {
         'brand-blue': '#052e45',
         'brand-darkblue': '#112233',
         'brand-gold': '#d8b073',
-        'brand-darkgold': '#a58350',
+        'brand-darkgold': '#d09f55',
         'brand-white': '#FFFFFF',
+        'brand-grey': '#ececec'
       },
       fontSize: {
         h1: ['35px', '43px'],
