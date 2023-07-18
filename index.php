@@ -28,7 +28,7 @@
                             <a href="#" title="About Us" aria-label="About Us" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">About Us</a>
                         </li>
                         <li class="inline-block">
-                            <a href="/jobs.html" title="Latest Jobs" aria-label="Latest Jobs" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Latest Jobs</a>
+                            <a href="/jobs.php" title="Latest Jobs" aria-label="Latest Jobs" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Latest Jobs</a>
                         </li>
                         <li class="inline-block">
                             <a href="#" title="Candidates" aria-label="Candidates" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Candidates</a>
@@ -160,7 +160,7 @@
                         <form action="#" class="border border-brand-gold rounded flex items-center">
                             <label for="newsletter" class="sr-only">Newsletter</label>
                             <input type="text" id="newsletter" name="newsletter" placeholder="Your email" class="bg-transparent w-full text-brand-white placeholder-brand-white px-5 py-4 focus:outline-none">
-                            <button type="submit" class="cursor-pointer"><i class="fa fa-arrow-right text-brand-white !text-[26px] px-5 py-4" aria-hidden="true"></i></button>
+                            <button type="submit" title="send-email" aria-label="send-email" class="cursor-pointer"><i class="fa fa-arrow-right text-brand-white !text-[26px] px-5 py-4" aria-hidden="true"></i></button>
                         </form>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                         <i class="fa fa-plus text-brand-gold" aria-hidden="true"></i>
                     </li>
                     <li class="py-4 flex justify-between text-[24px]">
-                        <a href="/jobs.html" title="Latest Jobs" aria-label="Latest Jobs" accesskey="1" tabindex="0" class="text-brand-white">Latest Jobs</a>
+                        <a href="/jobs.php" title="Latest Jobs" aria-label="Latest Jobs" accesskey="1" tabindex="0" class="text-brand-white">Latest Jobs</a>
                     </li>
                     <li class="py-4 flex justify-between text-[24px]">
                         <a href="#" title="Candidates" aria-label="Candidates" accesskey="1" tabindex="0" class="text-brand-white">Candidates</a>

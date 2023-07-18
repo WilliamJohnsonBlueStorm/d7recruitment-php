@@ -28,7 +28,7 @@
                         <a href="#" title="About Us" aria-label="About Us" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">About Us</a>
                     </li>
                     <li class="inline-block">
-                        <a href="./jobs.html" title="Latest Jobs" aria-label="Latest Jobs" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Latest Jobs</a>
+                        <a href="jobs.php" title="Latest Jobs" aria-label="Latest Jobs" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Latest Jobs</a>
                     </li>
                     <li class="inline-block">
                         <a href="#" title="Candidates" aria-label="Candidates" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Candidates</a>
@@ -64,7 +64,7 @@
             <div class="hidden lg:block text-brand-white mb-8">
                 <a href="/" title="home" aria-label="home" class="underline">Home</a>
                 <span> - </span>
-                <a href="./jobs.html" title="jobs" aria-label="jobs" class="underline">Latst Jobs</a>
+                <a href="jobs.php" title="jobs" aria-label="jobs" class="underline">Latst Jobs</a>
                 <span> - </span>
                 <span> Health, and Safety Manger Contract / Freelance Leicester</span>
             </div>
