@@ -28,7 +28,7 @@
                             <a href="#" title="About Us" aria-label="About Us" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">About Us</a>
                         </li>
                         <li class="inline-block">
-                            <a href="/jobs.php" title="Latest Jobs" aria-label="Latest Jobs" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Latest Jobs</a>
+                            <a href="/pages/jobs.php" title="Latest Jobs" aria-label="Latest Jobs" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Latest Jobs</a>
                         </li>
                         <li class="inline-block">
                             <a href="#" title="Candidates" aria-label="Candidates" class="inline-block text-brand-white p-2 xl:p-5 hover:text-brand-gold transition-all duration-300">Candidates</a>
@@ -206,7 +206,7 @@
                         <i class="fa fa-plus text-brand-gold" aria-hidden="true"></i>
                     </li>
                     <li class="py-4 flex justify-between text-[24px]">
-                        <a href="/jobs.php" title="Latest Jobs" aria-label="Latest Jobs" accesskey="1" tabindex="0" class="text-brand-white">Latest Jobs</a>
+                        <a href="/pages/jobs.php" title="Latest Jobs" aria-label="Latest Jobs" accesskey="1" tabindex="0" class="text-brand-white">Latest Jobs</a>
                     </li>
                     <li class="py-4 flex justify-between text-[24px]">
                         <a href="#" title="Candidates" aria-label="Candidates" accesskey="1" tabindex="0" class="text-brand-white">Candidates</a>
