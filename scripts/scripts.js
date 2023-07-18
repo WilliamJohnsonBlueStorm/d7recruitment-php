@@ -53,4 +53,39 @@ $(function(){
             },
         }
     });
+
+
+    const jobs_swiper= new Swiper('#similar-jobs-swiper', {
+        // Optional parameters
+        slidesPerView: 1.2,
+        spaceBetween: 15,
+        direction: 'horizontal',
+        loop: false,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.home-swiper-button-next',
+            prevEl: '.home-swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+                loop: false,
+            },
+        }
+    });
 });
