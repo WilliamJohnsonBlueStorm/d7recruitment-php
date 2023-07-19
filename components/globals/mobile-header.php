@@ -1,3 +1,5 @@
+<?php include ('data/header-nav.php'); ?>
+
 <header id="mobile-header" role="banner" class="hidden fixed bg-brand-blue inset-0 overflow-auto z-30">
     <div class="container">
         <div class="pt-10 pb-16 w-full flex justify-between items-center">
@@ -14,25 +16,21 @@
     <div class="container">
         <nav id="mobile-nav" role="navigation" class="text-p mb-4">
             <ul>
-                <li class="py-4 flex justify-between text-[24px]">
-                    <a href="#" title="About Us" aria-label="About Us" accesskey="1" tabindex="0" class="text-brand-white">About Us</a>
-                    <i class="fa fa-plus text-brand-gold" aria-hidden="true"></i>
-                </li>
-                <li class="py-4 flex justify-between text-[24px]">
-                    <a href="#" title="Latest Jobs" aria-label="Latest Jobs" accesskey="1" tabindex="0" class="text-brand-white">Latest Jobs</a>
-                </li>
-                <li class="py-4 flex justify-between text-[24px]">
-                    <a href="#" title="Candidates" aria-label="Candidates" accesskey="1" tabindex="0" class="text-brand-white">Candidates</a>
-                </li>
-                <li class="py-4 flex justify-between text-[24px]">
-                    <a href="#" title="Client Services" aria-label="Client Services" accesskey="1" tabindex="0" class="text-brand-white">Client Services</a>
-                </li>
-                <li class="py-4 flex justify-between text-[24px]">
-                    <a href="#" title="Sectors" aria-label="Sectors" accesskey="1" tabindex="0" class="text-brand-white">Sectors</a>
-                </li>
-                <li class="py-4 flex justify-between text-[24px]">
-                    <a href="#" title="Contact Us" aria-label="Contact Us" accesskey="1" tabindex="0" class="text-brand-white">Contact Us</a>
-                </li>
+                <?php foreach ($mainNavLinks as $mainNavLink) {?>
+                    <li class="py-4 text-[24px]">
+                        <a href="<?php echo $mainNavLink['url']; ?>" title="<?php echo $mainNavLink['title']; ?>" aria-label="<?php echo $mainNavLink['title']; ?>" id="<?php echo $mainNavLink['id']; ?>" class="text-brand-white"><?php echo $mainNavLink['title']; ?></a>
+                        <?php if (isset($mainNavLink['navDropdowns'])) {?>
+                            <i class="fa fa-plus text-brand-gold expand-mobile-nav float-right" aria-hidden="true"></i>
+                            <ul class="hidden flex-none mt-5">
+                                <?php foreach ($mainNavLink['navDropdowns'] as $navDropdown) {?>
+                                    <li class="py-4 pl-4 text-brand-white text-[18px]">
+                                        <a href="<?php echo $navDropdown['url']; ?>" title="<?php echo $navDropdown['title']; ?>" aria-label="<?php echo $navDropdown['title']; ?>"><?php echo $navDropdown['title']; ?></a>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        <?php } ?>
+                    </li>
+                <?php } ?>
             </ul>
         </nav>
         <div class="text-[18px]">

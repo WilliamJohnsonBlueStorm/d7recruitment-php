@@ -3,7 +3,7 @@
 <?php include('components/globals/header.php') ?>
 
     <?php include('components/home-banner.php') ?>
-    <main class="pt-20 md:pt-0">
+    <main>
         <div class="container">
             <h2 class="text-h2 lg:text-h2-desktop text-brand-gold font-Novecento-sans font-bold uppercase mb-5">It&apos;s All About the people</h2>
 

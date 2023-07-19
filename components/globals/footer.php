@@ -1,3 +1,5 @@
+<?php include ('data/footer-links.php'); ?>
+
 <footer class="pt-8 lg:pt-24">
     <section class="bg-brand-gold px-2 py-8 lg:p-14 xl:py-20 xl:px-2">
         <div class="container">
@@ -37,10 +39,9 @@
             <div class="grid grid-cols-12">
                 <div class="col-span-12 lg:col-span-7">
                     <ul class="py-8">
-                        <li class="mr-8 inline-block"><a href="#" title="Accessibility" aria-label="Accessibility" class="text-brand-white hover:text-brand-gold transition-all duration-300">Accessibility</a></li>
-                        <li class="mr-8 inline-block"><a href="#" title="Terms &amp; Conditions" aria-label="Terms &amp; Conditions" class="text-brand-white hover:text-brand-gold transition-all duration-300">Terms &amp; Conditions</a></li>
-                        <li class="mr-8 inline-block"><a href="#" title="Privacy Policy" aria-label="Privacy Policy" class="text-brand-white hover:text-brand-gold transition-all duration-300">Privacy Policy</a></li>
-                        <li class="inline-block"><a href="#" title="Site Map" aria-label="Site Map" class="text-brand-white hover:text-brand-gold transition-all duration-300">Site Map</a></li>
+                        <?php foreach ($footerLinks as $footerLink) {?>
+                            <li class="mr-8 inline-block"><a href="<?php echo $footerLink['url']; ?>" title="<?php echo $footerLink['title']; ?>" aria-label="<?php echo $footerLink['title']; ?>" class="text-brand-white hover:text-brand-gold transition-all duration-300"><?php echo $footerLink['title']; ?></a></li>
+                        <?php } ?>
                     </ul>
                 </div>
                 <div class="col-span-12 lg:col-span-5">

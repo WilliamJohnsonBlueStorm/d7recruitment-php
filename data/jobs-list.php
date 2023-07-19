@@ -1,0 +1,68 @@
+<?php
+$availableJobs = [
+    [
+        'title' => 'Health, and Safety Manger Contract / Freelance Leicester',
+        'url' => '/job-details.php',
+        'type' => 'Contract',
+        'location' => 'Leicester',
+        'pay' => 'Day Rate £350 - £400',
+        'description' => 'HSE Manager Contract / Freelance Job Title: Freelance HSE Manager. Location: Leicester. Salary: £350 - £400 Per Day. Start Date: 31st July 2023. Duration: 3 Months. D7 Recruitment is partnering with a leading Health and Safety Consultancy based in Yorkshire who are currently seeking an experienced Health, Safety, and Environment...',
+    ],
+    [
+        'title' => 'Health, and Safety Manger Contract / Freelance Coventry',
+        'url' => '#',
+        'type' => 'Contract',
+        'location' => 'Coventry',
+        'pay' => 'Day Rate £350 - £400',
+        'description' => 'HSE Manager Contract / Freelance Job Title: Freelance HSE Manager. Location: Coventry. Salary: £350 - £400 Per Day. Start Date: Immediate. D7 Recruitment is partnering with a leading Health and Safety Consultancy based in Yorkshire who are currently seeking an experienced Health, Safety, and Environment (HSE) Manager to join their...',
+    ],
+    [
+        'title' => 'Health, and Safety Manger Contract / Freelance Nottingham Nights',
+        'url' => '#',
+        'type' => 'Contract',
+        'location' => 'Nottingham',
+        'pay' => 'Day Rate £350 - £400',
+        'description' => 'HSE Manager Contract / Freelance - Nights Job Title: Freelance HSE Manager. Location: Nottingham. Salary: £350 - £400 Per Day. Duration: 4th - 28th August. D7 Recruitment is partnering with a leading Health and Safety Consultancy based in Yorkshire who are currently seeking an experienced Health, Safety, and Environment (HSE)...',
+    ],
+    [
+        'title' => 'Health, and Safety Manger Contract / Freelance Coventry - Nights',
+        'url' => '#',
+        'type' => 'Contract',
+        'location' => 'Coventry',
+        'pay' => 'Day Rate £350 - £400',
+        'description' => 'HSE Manager Contract / Freelance Job Title: Freelance HSE Manager. Location: Coventry. Salary: £350 - £400 Per Day. Nights: Monday to Thursday Start Date: Immediate. D7 Recruitment is partnering with a leading Health and Safety Consultancy based in Yorkshire who are currently seeking an experienced Health, Safety, and Environment (HSE)...',
+    ],
+    [
+        'title' => 'Entry Level Health & Safety Advisor',
+        'url' => '#',
+        'type' => 'Full-time',
+        'location' => 'London',
+        'pay' => '£30,000 - £38,000',
+        'description' => 'Entry Level Health & Safety Advisor Role – Health and Safety Advisor Location – London Salary - £30,000 - £38,000 Depending on Experience Qualification – NEBOSH General or Working towards. D7 Recruitment is exclusively recruiting for a Health and Safety Advisor in the London area. This is an outstanding opportunity...',
+    ],
+    [
+        'title' => 'Health, and Safety Manger Contract / Freelance Coventry',
+        'url' => '#',
+        'type' => 'Permanent, full time',
+        'location' => 'National',
+        'pay' => ' £38,000 - £48,000 Per Annum Plus £50 per day onsite bonus, Plus £3600 Car Allowance.',
+        'description' => 'CDM Manager / HSE Manager on client sites ensuring the health, safety and welfare of all contractors during the construction and commissioning phase of a client project.',
+    ],
+    [
+        'title' => 'National Health & Safety Manager',
+        'url' => '#',
+        'type' => 'Permanent, full time',
+        'location' => 'National',
+        'pay' => '£40,000 - £50,000 Plus £6000 Car allowance.',
+        'description' => '
+            Job Title: National Health and Safety Manager Location: Nottingham / Tamworth / Leicester Annual Salary: £40,000 - £50,000 Car Allowance: £6000 As a recruiting agency partnering with a prominent automotive repair company, we have an exciting opportunity for a National Health and Safety Manager to join their team. This reputable...',
+    ],
+    [
+        'title' => 'Health and Safety Operations Manager',
+        'url' => '#',
+        'type' => 'Permanent, Full-time',
+        'location' => 'National',
+        'pay' => '£50,000 - £60,000 Plus Car Allowance',
+        'description' => 'Job Title: Operations Manager Reports To: Managing Director Salary: £50,000 - £60,000 Car Allowance: £3600 Key purpose of the role: End to end project responsibility for a specified portfolio of clients/projects. All activities will align with and support the core business processes Responsibilities: Client Relationship • Be the primary liaison...',
+    ],
+];

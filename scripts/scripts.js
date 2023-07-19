@@ -20,6 +20,14 @@ $(function(){
         }
     });
 
+    $('.expand-mobile-nav').on('click', function()
+    {
+        $(this).parent().find('ul').toggleClass('hidden');
+        $(this).toggleClass('fa-plus fa-minus');
+
+    });
+
+
     const swiper= new Swiper('.homepage-callouts-slider .swiper', {
         // Optional parameters
         slidesPerView: 1.2,

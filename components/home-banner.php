@@ -1,4 +1,4 @@
-<section id="banner" aria-labelledby="main-title" class="mb-12 lg:mb-24">
+<section id="banner" aria-labelledby="main-title" class="mb-12 lg:mb-24 pt-20 md:pt-0">
     <div class="container">
         <div class="grid grid-cols-2 gap-8 items-center">
             <div class="col-span-2 lg:col-span-1 order-2 lg:order-1">
