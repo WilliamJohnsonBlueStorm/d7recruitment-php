@@ -37,7 +37,6 @@
             <a href="#" title="Upload cv" aria-label="Upload cv" tabindex="0" class="py-4 font-bold text-brand-white border-2 border-brand-gold rounded block text-center uppercase">Upload cv
                 <i class="fa fa-arrow-up ml-2" aria-hidden="true"></i>
             </a>
-
         </div>
     </div>
 </header>

@@ -1,3 +1,5 @@
+<?php include('data/similar-jobs-slider.php')?>
+
 <div class="container">
     <div class="col-span-3 mb-8">
         <h2 class="text-h2 text-brand-gold uppercase font-bold mb-5">Similar Jobs</h2>
@@ -6,50 +8,19 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <a href="#" title="Health and Advisor" aria-label="Health and Advisor" class="swiper-slide block rounded group p-5 border border-brand-white !h-auto transition-all duration-300 hover:border-brand-gold">
-                    <div class="h-full transition-all duration-300 flex flex-col">
-                        <h3 class="text-h3 text-brand-gold font-Novecento-sans font-bold uppercase mb-8 group-hover:text-brand-white transition-all duration-300">Health and Advisor</h3>
-                        <ul class="mb-8 h-full">
-                            <li class="text-brand-white mb-2"><i class="fa-regular fa-clock text-brand-gold mr-2 w-[20px]"></i>Contract</li>
-                            <li class="text-brand-white mb-2"><i class="fa-solid fa-location-pin text-brand-gold mr-2 w-[20px]"></i>Leicester</li>
-                            <li class="text-brand-white mb-2"><i class="fa-solid fa-sterling-sign text-brand-gold mr-2 w-[20px]"></i>Day Rate £350 - £400</li>
-                        </ul>
-                        <span class="uppercase text-brand-gold font-bold inline-block lg:p-4 lg:border lg:border-brand-gold lg:w-fit lg:rounded lg:group-hover:bg-brand-gold lg:group-hover:text-brand-blue duration-300 transition-all">Job details <i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                </a>
-                <a href="#" title="Health, and Safety Manger Contract / Freelance Nottingham Nights" aria-label="Health, and Safety Manger Contract / Freelance Nottingham Nights" class="swiper-slide block rounded group p-5 border border-brand-white !h-auto transition-all duration-300 hover:border-brand-gold">
-                    <div class="h-full transition-all duration-300 flex flex-col">
-                        <h3 class="text-h3 text-brand-gold font-Novecento-sans font-bold uppercase mb-5 group-hover:text-brand-white transition-all duration-300">Health, and Safety Manger Contract / Freelance Nottingham Nights</h3>
-                        <ul class="mb-5 h-full">
-                            <li class="text-brand-white"><i class="fa-regular fa-clock text-brand-gold mr-2 w-[20px]"></i>Contract</li>
-                            <li class="text-brand-white"><i class="fa-solid fa-location-pin text-brand-gold mr-2 w-[20px]"></i>Nottingham</li>
-                            <li class="text-brand-white"><i class="fa-solid fa-sterling-sign text-brand-gold mr-2 w-[20px]"></i>Day Rate £350 - £400</li>
-                        </ul>
-                        <span class="uppercase text-brand-gold font-bold inline-block lg:p-4 lg:border lg:border-brand-gold lg:w-fit lg:rounded lg:group-hover:bg-brand-gold lg:group-hover:text-brand-blue duration-300 transition-all">Job details <i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                </a>
-                <a href="#" title="Health, and Safety Manger Contract / Freelance Leicester" aria-label="Health, and Safety Manger Contract / Freelance Leicester" class="swiper-slide block rounded group p-5 border border-brand-white !h-auto transition-all duration-300 hover:border-brand-gold">
-                    <div class="h-full transition-all duration-300 flex flex-col">
-                        <h3 class="text-h3 text-brand-gold font-Novecento-sans font-bold uppercase mb-5 group-hover:text-brand-white transition-all duration-300">Health, and Safety Manger Contract / Freelance Leicester</h3>
-                        <ul class="mb-5 h-full">
-                            <li class="text-brand-white"><i class="fa-regular fa-clock text-brand-gold mr-2 w-[20px]"></i>Contract</li>
-                            <li class="text-brand-white"><i class="fa-solid fa-location-pin text-brand-gold mr-2 w-[20px]"></i>Leicester</li>
-                            <li class="text-brand-white"><i class="fa-solid fa-sterling-sign text-brand-gold mr-2 w-[20px]"></i>Day Rate £350 - £400</li>
-                        </ul>
-                        <span class="uppercase text-brand-gold font-bold inline-block lg:p-4 lg:border lg:border-brand-gold lg:w-fit lg:rounded lg:group-hover:bg-brand-gold lg:group-hover:text-brand-blue duration-300 transition-all">Job details <i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                </a>
-                <a href="#" title="Entry Level Health & Safety Advisor" aria-label="Entry Level Health & Safety Advisor" class="swiper-slide block rounded group p-5 border border-brand-white !h-auto transition-all duration-300 hover:border-brand-gold">
-                    <div class="h-full transition-all duration-300 flex flex-col">
-                        <h3 class="text-h3 text-brand-gold font-Novecento-sans font-bold uppercase mb-5 lg:group-hover:text-brand-white transition-all duration-300">Entry Level Health & Safety Advisor</h3>
-                        <ul class="mb-5 h-full">
-                            <li class="text-brand-white"><i class="fa-regular fa-clock text-brand-gold mr-2 w-[20px]"></i>Full-time</li>
-                            <li class="text-brand-white"><i class="fa-solid fa-location-pin text-brand-gold mr-2 w-[20px]"></i>London</li>
-                            <li class="text-brand-white"><i class="fa-solid fa-sterling-sign text-brand-gold mr-2 w-[20px]"></i>£30,000 - £38,000</li>
-                        </ul>
-                        <span class="uppercase text-brand-gold font-bold inline-block lg:p-4 lg:border lg:border-brand-gold lg:w-fit lg:rounded lg:group-hover:bg-brand-gold lg:group-hover:text-brand-blue duration-300 transition-all">Job details <i class="fa-solid fa-arrow-right"></i></span>
-                    </div>
-                </a>
+                <?php foreach ($similarJobsSlides as $similarJobsSlide) {?>
+                    <a href="<?php echo $similarJobsSlide['url']; ?>" title="<?php echo $similarJobsSlide['title']; ?>" aria-label="<?php echo $similarJobsSlide['title']; ?>" class="swiper-slide block rounded group p-5 border border-brand-white !h-auto transition-all duration-300 hover:border-brand-gold">
+                        <div class="h-full transition-all duration-300 flex flex-col">
+                            <h3 class="text-h3 text-brand-gold font-Novecento-sans font-bold uppercase mb-8 group-hover:text-brand-white transition-all duration-300"><?php echo $similarJobsSlide['title']; ?></h3>
+                            <ul class="mb-8 h-full">
+                                <li class="text-brand-white mb-2"><i class="fa-regular fa-clock text-brand-gold mr-2 w-[20px]"></i><?php echo $similarJobsSlide['type']; ?></li>
+                                <li class="text-brand-white mb-2"><i class="fa-solid fa-location-pin text-brand-gold mr-2 w-[20px]"></i><?php echo $similarJobsSlide['location']; ?></li>
+                                <li class="text-brand-white mb-2"><i class="fa-solid fa-sterling-sign text-brand-gold mr-2 w-[20px]"></i><?php echo $similarJobsSlide['pay']; ?></li>
+                            </ul>
+                            <span class="uppercase text-brand-gold font-bold inline-block lg:p-4 lg:border lg:border-brand-gold lg:w-fit lg:rounded lg:group-hover:bg-brand-gold lg:group-hover:text-brand-blue duration-300 transition-all">Job details <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                <?php } ?>
             </div>
         </div>
         <div class="hidden md:flex justify-between items-center">
